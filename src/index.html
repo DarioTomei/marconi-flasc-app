@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>baghì</title>
-  </head>
 
-  <body>
-    <h1>Miao Miao</h1>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>baghì</title>
+</head>
+
+
+<body
+  style="background-image: url('https://th.bing.com/th/id/R.9291c4896774bd449ac6c55f64d531c8?rik=LmJZSV3Utheqqg&pid=ImgRaw&r=0');">
+  <h1>Miao Miao</h1>
+  <p>
+    Il bagno è una stanza essenziale in ogni casa, progettata per l'igiene
+    personale e il relax. Ecco gli elementi principali e il loro utilizzo:
+  </p>
+
+
+  {% for post in posts %}
+  <div class="post">
+    <h2>{{post.title}}</h2>
+    <p>{{post.content}}</p>
+    <img src="url_immagine_lavandino" alt="Immagine Lavandino">
+    {% endfor %}
+  </div>
+
+</body>
+
 </html>
-  <body style="background-image: url('https://th.bing.com/th/id/R.9291c4896774bd449ac6c55f64d531c8?rik=LmJZSV3Utheqqg&pid=ImgRaw&r=0');">
-    <h1>Miao Miao</h1>
-  </body>
 
+</html>
