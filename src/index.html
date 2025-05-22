@@ -9,16 +9,22 @@
 
 
 <body
-  style="background-image: url('https://th.bing.com/th/id/R.9291c4896774bd449ac6c55f64d531c8?rik=LmJZSV3Utheqqg&pid=ImgRaw&r=0');">
+  style="background-image: url('https://img.freepik.com/foto-premium/piastrella-in-pietra-bianca-e-grigia-con-texture-in-marmo-calacatta-dorato-naturale_410516-14975.jpg?w=2000');">
   <h1>Miao Miao</h1>
   <p>
     Il bagno è una stanza essenziale in ogni casa, progettata per l'igiene
     personale e il relax. Ecco gli elementi principali e il loro utilizzo:
   </p>
-
+  <style>
+    .description-box {
+      border: 2px solid black;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  </style>
 
   {% for post in posts %}
-  <div class="post">
+  <div class="description-box">
     <h2>{{post.title}}</h2>
     <p>{{post.content}}</p>
     <img src="url_immagine_lavandino" alt="Immagine Lavandino">
